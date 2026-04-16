@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    font-size: 12px;
+    background-color: rgb(47, 7, 7);
+    color: white;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 100;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.score,
+.best-score {
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+.card-grid {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 2em;
+    gap: 2em;
+}
+
+button > p {
+    font-size: 1.2em;
+    border: 2px solid white;
+    border-bottom: none;
+    padding: 1em 0em 0em 0em;
+    width: 100%;
+}
+
+button > img {
+    width: 10em;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    background-color: inherit;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+}
+
+button:hover {
+    box-shadow: 0.2em 0.2em 1em #ffffff;
+    transform: translate(-0.2em, -0.2em);
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 8px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
